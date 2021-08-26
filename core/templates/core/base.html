@@ -1,0 +1,22 @@
+
+<title>{% block title %}{% endblock %} | Lic. Cynthia Mouzo </title>
+
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Portada</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'portfolio' %}">Portafolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
+        </li>
+    </ul>
+</div>
+<a class="navbar-brand" href="{% url 'home' %}">Cynthia Mouzo</a>
+
+{% block content %}{% endblock %}
