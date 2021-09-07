@@ -18,7 +18,9 @@ import django
 from django.contrib import admin
 from django.urls import path
 from core import views
-
+from core import views as core_views
+from portfolio import views as portfolio_views
+from django.conf import settings
 
 urlpatterns = [
     path ("", views.home,name= "home"),

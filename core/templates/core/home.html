@@ -1,7 +1,12 @@
 {% extends 'core/base.html' %}
 
-{% block content %}
+{% load static %}
 
-<h1>Portada</h1>
-<h2>Bienvenidos</h2>
+{% block title %}Home{% endblock %}
+
+{% block background %}{% static 'core/img/home.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Cynthia Mouzo </h1>
+    <span class="subheading">Licenciada Comercio Internacional</span>
 {% endblock %}
